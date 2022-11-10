@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inflation Rate Calculator</title>
+        <link rel="icon" href="images/cts.ico">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <!-- Pacifo Font -->
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+        <!-- Bebas Font -->
+        <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+        <!-- Ubuntu -->
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    </head>
+    
+    <body>
+        <center><h1 id="div-title">Car Purchase Eligibility Calculator</h1></center>
+
+        <center>
+            <table>
+                <!-- Net Income -->
+                <tr>
+                    <td colspan="5" class="td_subtopic">Net Income:</td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Monthly Salary</td>
+                    <td class="td_second_row"></td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row">
+                        <input type="number" id="monthly_salary"><br><span id="monthly_salary_error"></span>
+                    </td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row">Income Tax + EPF + SOCSO</td>
+                    <td class="td_second_row"></td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row">
+                        <p id="output1"></p>
+                    </td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row"></td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row">
+                        <p id="output2"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+
+                <!-- Maximum Monthly Car Installment -->
+                <tr>
+                    <td colspan="5" class="td_subtopic">Maximum Monthly Car Installment:</td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Maximum Monthly Car Commitment</td>
+                    <td class="td_second_row"></td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row">
+                        <p id="output3"></p>
+                    </td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row">Estimated Monthly Car Expenses:</td>
+                    <td class="td_second_row"></td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row">Road Tax (yearly)</td>
+                    <td class="td_third_row">
+                        <input type="number" id="road_tax"><br><span id="road_tax_error"></span>
+                    </td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row">Car Insurance (yearly)</td>
+                    <td class="td_third_row">
+                        <input type="number" id="car_insurance"><br><span id="car_insurance_error"></span>
+                    </td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row">Car Maintenance (yearly)</td>
+                    <td class="td_third_row">
+                        <input type="number" id="car_maintenance"><br><span id="car_maintenance_error"></span>
+                    </td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row">Fuel Petrol (monthly)</td>
+                    <td class="td_third_row">
+                        <input type="number" id="fuel_petrol"><br><span id="fuel_petrol_error"></span>
+                    </td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row"></td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row">
+                        <p id="output4"></p>
+                    </td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row"></td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row">
+                        <p id="output5"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+
+                <!-- Highest Net Car Budget Price -->
+                <tr>
+                    <td colspan="5" class="td_subtopic">Highest Net Car Budget Price:</td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Car Loan Variables:</td>
+                    <td class="td_second_row"></td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row">Interest Rate (%)</td>
+                    <td class="td_third_row">
+                        <input type="number" id="interest_rate"><br><span id="interest_rate_error"></span>
+                    </td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row">Loan Term (year)</td>
+                    <td class="td_third_row">
+                        <input type="number" id="loan_term"><br><span id="loan_term_error"></span>
+                    </td>
+                    <td class="td_fourth_row"></td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Maximum Affordable Car Loan</td>
+                    <td class="td_second_row"></td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row">
+                        <p id="output6"></p>
+                    </td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>                            
+                    <td class="td_first_row">Total Car Loan Interest</td>
+                    <td class="td_second_row"></td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row">
+                        <p id="output7"></p>
+                    </td>
+                    <td class="td_fifth_row"></td>
+                </tr>
+                <tr>
+                    <td class="td_first_row"></td>
+                    <td class="td_second_row"></td>
+                    <td class="td_third_row"></td>
+                    <td class="td_fourth_row"></td>
+                    <td id="grand_total" class="td_fifth_row">
+                        <p id="output8"></p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
+        <center>
+            <a id="btn-calc" class="neon_button" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Calculate
+            </a>
+        </center>                     
+    </body>
+
+    <footer>
+        <center>
+            <p class="footer_copyright">
+                2022 Copyright © Yottasoft Technology
+            </p>
+        </center>
+
+        <center>
+            <p class="footer_copyright">
+                All rights reserved.
+            </p>
+        </center>
+    </footer>
+</html>
